@@ -1,3 +1,3 @@
 FROM centos:7
 
-RUN yum makecache && yum -y update && yum clean all
+RUN yum makecache fast && yum -y update && yum clean all
