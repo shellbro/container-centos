@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+set -o nounset
+set -o errexit
+
+readonly REPO="shellbro/centos"
+readonly TAG="$(cat VERSION)"
+
+/usr/bin/docker pull "$REPO:7"
+/usr/bin/docker tag "$REPO:7" "$REPO:$TAG"
+/usr/bin/docker push "$REPO:$TAG"
