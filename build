@@ -1,4 +1,4 @@
 #!/bin/bash
 
 docker build --pull --no-cache\
-       -t localhost:5000/shellbro/centos:latest "$@" .
+       -t localhost:5000/shellbro/centos:8 "$@" .
