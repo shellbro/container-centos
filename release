@@ -11,6 +11,6 @@ docker pull "$repo:7"
 docker tag "$repo:7" "$repo:$tag"
 docker push "$repo:$tag"
 
-git pull origin master
+git pull origin centos7
 git tag "v$tag"
 git push origin "v$tag"
