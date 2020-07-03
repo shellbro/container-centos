@@ -12,5 +12,5 @@ sudo docker tag "$repo:8" "$repo:$tag"
 sudo docker push "$repo:$tag"
 
 git pull origin master
-git tag "$tag"
-git push origin "$tag"
+git tag "v$tag"
+git push origin "v$tag"
